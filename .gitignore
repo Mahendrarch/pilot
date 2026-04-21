@@ -1,1 +1,8 @@
-(src/hooks/useHooks.js)
+```
+# Dependencies
+node_modules/
+# Build artifacts
+dist/
+# Temporary files
+*.tmp
+```
