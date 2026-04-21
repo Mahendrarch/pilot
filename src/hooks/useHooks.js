@@ -25,7 +25,7 @@ export function useAudioContext() {
     if (!audioContextRef.current) {
       audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
       masterGainRef.current = audioContextRef.current.createGain();
-      masterGainRef.current.connect(audioContextRefRef.current.destination);
+      masterGainRef.current.connect(audioContextRef.current.destination);
       masterGainRef.current.gain.value = isMuted ? 0 : 0.3;
     }
     if (audioContextRef.current.state === 'suspended') {
